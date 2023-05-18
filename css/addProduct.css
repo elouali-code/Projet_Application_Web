@@ -1,0 +1,54 @@
+body {
+    background-image: url("https://img.freepik.com/free-photo/white-painted-wall-texture-background_53876-138197.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#title {
+    font-size: 64px;
+    font-family: Arial;
+    text-align: center;
+}
+
+#subtitle{
+    font-size: 14px;
+    font-family: Arial;
+    
+    text-align: center;
+}
+
+#createProductForm {
+    width: 800px;
+    height: 380px;
+    padding: 13px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -400px;
+    margin-top: -180px;
+
+    background-color: rgba(240, 255, 255, 0.7);
+
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+#myProductCreationModal {
+    font-size: 14px;
+    font-family: Arial;
+
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+
+    color: white;
+    background-color: #3BD9FF;
+    border-radius: 6px;
+    border: 0;
+
+    float: center;
+}
+

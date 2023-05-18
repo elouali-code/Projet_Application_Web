@@ -1,0 +1,21 @@
+/* Code CSS */
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>forget password</title>
+		
+        <link rel="stylesheet" type="text/css" href="css/forget_pwd.css"/>
+		<script type="text/javascript" src="js/login.js"></script>
+        
+        
+        
+    </head>
+    <body>
+	<div id="forget_pwd_frame">
+	
+	    <p id="image_logo"><img src="https://assets.msn.com/statics/icons/favicon_newtabpage.png"></p>	
+		
+        <form>     
+  		    
+            <p><label class="label_input">name</label><input type="text" id="name" class="text_field"/></p>                    
+                                  
+            <div id="forget_pwd_control">                
+                <input type="button" id="button_submit" value="submit" onclick="submit1(document.getElementById('name').value)"/>
+                <button type="reset" id="button_reset" class="btn btn-default" onclick="document.getElementById('name').value = '';">reset</button>   
+            </div>
+        </form>
+        <script type="text/javascript">       
+            var searchUrl = window.location.href;
+            var searchData = searchUrl.split("=");
+            var searchText = decodeURI(searchData[1]);
+            document.getElementById("name").value = searchText;        
+    </script>
+	</div>
+    </body>
+</html>

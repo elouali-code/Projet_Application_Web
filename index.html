@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<title>LOGIN</title>
+
+	<link rel="stylesheet" type="text/css" href="css/login.css" />
+	<script type="text/javascript" src="js/login.js"></script>
+</head>
+
+<body>
+	<div id="login_frame">
+
+		<p id="image_logo"><img src="https://assets.msn.com/statics/icons/favicon_newtabpage.png"></p>
+
+		<form>
+
+			<p><label class="label_input">id:</label><input type="text" id="username" class="text_field" /></p>
+			<p><label class="label_input">Mot de passe:</label><input type="password" id="password"
+					class="text_field_mdp" width="185px" />
+				<img id="imageShow" src="./images/show.png" onclick="hideMdp()" width=30px height=30px>
+				</p>
+
+			<div id="login_control">
+				<input type="button" id="Envoyer" value="login" onclick="login()" />
+				<input type="button" id="Forget" value="Mot de passe oublie?" onclick="forget()" />
+			</div>
+
+		</form>
+		<script type="text/javascript">
+				var searchUrl = window.location.href;
+				var searchData = searchUrl.split("=");
+				var searchText = decodeURI(searchData[1]);
+				var searchText1 = decodeURI(searchData[2]);
+				console.log(searchText);
+				console.log(searchText1);
+
+
+				if (searchText == "undefined") {
+					document.getElementById("username").value = '';
+				}
+				else {
+					console.log(searchText);
+					let arr = searchText.split('&');
+					document.getElementById("username").value = arr[0];
+					document.getElementById("password").value = searchText1;
+				}
+
+		</script>
+	</div>
+</body>
+
+</html>
